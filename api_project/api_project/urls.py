@@ -17,9 +17,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from basic_api import views
+from rest_framework import routers 
+from employee_api.views import EmployeeViewSet
+
+router=routers.DefaultRouter()
+router.register('employeeapi',EmployeeViewSet)
 
 urlpatterns = [
     path('',views.index,name='index'),
     path('admin/', admin.site.urls),
     path('basic_api/',include('basic_api.urls')),
+    path('',include(router.urls)),
 ]
