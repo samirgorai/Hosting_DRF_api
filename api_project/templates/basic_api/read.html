@@ -1,0 +1,24 @@
+{% extends 'basic_api/base.html' %}
+
+{% block body_block%}
+<div class="jumbotron">
+    <h1>Read Employee Data</h1>
+    <form action="{% url 'basic_api:read' %}" method="GET">
+        {% csrf_token %}
+        {{ Form.as_p }}
+        <input class="btn btn-primary" type="submit" value="Read">
+    </form>
+
+    <h2>Employee Name: {{emp_name_read}}</h2>
+    <h2>Employee ID: {{emp_id_read}}</h2>
+
+    {% if Flag2 %}
+        <h1>{{ message }}</h1>
+    {% endif %}
+
+    {% if Flag %}
+        <h2>Employee Name: {{emp_name_read}}</h2>
+        <h2>Employee ID: {{emp_id_read}}</h2>
+    {% endif %}
+
+{% endblock %}
