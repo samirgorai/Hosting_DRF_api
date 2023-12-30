@@ -23,10 +23,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-q9*=qkb-ews0jj8()#+wivd!bei0^b6hhb0(2n=&kzsbopl4cr'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 TEMPLATES_DIR=Path.joinpath(BASE_DIR,'templates')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['samirgorai.pythonanywhere.com']
 
 
 # Application definition
