@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-q9*=qkb-ews0jj8()#+wivd!bei0^b6hhb0(2n=&kzsbopl4cr
 DEBUG = False
 TEMPLATES_DIR=Path.joinpath(BASE_DIR,'templates')
 
-ALLOWED_HOSTS = ['samirgorai.pythonanywhere.com']
+ALLOWED_HOSTS = ['samirgorai2.pythonanywhere.com']
 
 
 # Application definition
